@@ -528,7 +528,8 @@
 
                 <div class="contact__content">
                     <h3 class="contact__title">Write Me Your Project</h3>
-                    <form action="" class="contact__form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <input type="hidden" name="access_key" value="48cec8e0-e571-49d9-8702-e2bb8dad0a92">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
                             <input type="text" placeholder="Insert Your Name" class="contact__form-input" id="name">
@@ -596,47 +597,6 @@
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <!-------------SMTP JS-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        var btn = document.getElementById('send-btn');
-        btn.addEventListener('click', function (e) {
-            e.preventDefault()
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var msg = document.getElementById('description').value;
-
-
-            Email.send({
-                SecureToken: "03c58dc3-6928-4f10-bc80-157ecc5fbf81",
-                To: 'md.ashikul4040@gmail.com',
-                From: 'ashikulislam780@gmail.com',
-                Subject: "This is the subject",
-                Body: "Name : " + name + "<br> Email : " + email
-                    + "<br> Message : " + msg
-            }).then(
-                message => alert(message)
-            );
-        })
-        function sendEmail() {
-
-
-            /*Email.send({
-                Host: "smtp.gmail.com",
-                Username: "md.ashikul4040@gmail.com",
-                Password: "ashik4040",
-                To: 'md.ashikul4040@gmail.com',
-                From: document.getElementById('email').value,
-                Subject: "This is the subject",
-                Body: "Name : " + document.getElementById("name").value
-                    + "<br> Email : " + document.getElementById("email").value
-                    + "<br> Message : " + document.getElementById("description").value
-            }).then(
-                message => alert(message)
-            );*/
-        }
-        //03c58dc3-6928-4f10-bc80-157ecc5fbf81
-
-    </script>
 </body>
 
 </html>
