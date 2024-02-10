@@ -12,10 +12,12 @@
         Blue: hsl(207, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
+        Green : hsla(182.55, 38.21%, 75.88%);
   */
-  --first-hue: 35;
-  --sat: 31%;
-  --lig: 62%;
+
+  --first-hue: 182.55;
+  --sat: 38.21%;
+  --lig: 75.88%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
