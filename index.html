@@ -68,7 +68,7 @@
                 <div class="home__data">
                     <span class="home__greeting">Hello I'm</span>
                     <h1 class="home__name">Ashikul Islam</h1>
-                    <h3 class="home__education">Frontend Developer</h3>
+                    <h3 class="home__education"><span class="auto-type">Frontend Developer</span></h3>
 
                     <div class="home__buttons">
                         <a href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
@@ -464,7 +464,8 @@
                 <div class="work__card mix mobile">
                     <img src="assets/img/TELEHEAL.png" alt="" srcset="" class="work__img">
                     <h3 class="work__title">Teleheal - 24*7 healthcare App</h3>
-                    <a href="https://www.linkedin.com/posts/ashikul-islam-780_completed-software-development-iii-a-project-activity-7101036469774938112-PYfl?utm_source=share&utm_medium=member_desktop" class="work__button" target="_blank">
+                    <a href="https://www.linkedin.com/posts/ashikul-islam-780_completed-software-development-iii-a-project-activity-7101036469774938112-PYfl?utm_source=share&utm_medium=member_desktop"
+                        class="work__button" target="_blank">
                         Live Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
@@ -478,14 +479,24 @@
                 <div class="work__card mix ui">
                     <img src="assets/img/1.png" alt="" srcset="" class="work__img">
                     <h3 class="work__title">Cycle Buying App</h3>
-                    <a href="https://www.behance.net/gallery/181575401/Simple-Cycle-Buying-App/modules/1025698409" target="_blank" class="work__button">
+                    <a href="https://www.behance.net/gallery/181575401/Simple-Cycle-Buying-App/modules/1025698409"
+                        target="_blank" class="work__button">
                         Live Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
                 <div class="work__card mix ui">
                     <img src="assets/img/product_animation.png" alt="" srcset="" class="work__img">
                     <h3 class="work__title">Product Animation Design</h3>
-                    <a href="https://www.behance.net/gallery/181820727/Nike-Product-Animation" target="_blank" class="work__button">
+                    <a href="https://www.behance.net/gallery/181820727/Nike-Product-Animation" target="_blank"
+                        class="work__button">
+                        Live Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix ui">
+                    <img src="assets/img/learnvista.jpg" alt="" srcset="" class="work__img">
+                    <h3 class="work__title">LearnVista Website Ui</h3>
+                    <a href="https://www.behance.net/gallery/190568141/Learnvista-Website-UI" target="_blank"
+                        class="work__button">
                         Live Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
@@ -599,7 +610,17 @@
             </span>
         </div>
     </footer>
+    <!-------------Auto Type JS------------>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Frontend Developer","Backend Developer" ,"UI/UX Designer"],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
@@ -611,7 +632,6 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-    <!-------------SMTP JS-->
 </body>
 
 </html>
