@@ -13,11 +13,13 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
         Green : hsla(182.55, 38.21%, 75.88%);
+        Deep Purple : hsla(286, 56%, 47%,1);
+        Deep Silver : hsla(221, 16%, 50%,1);
   */
 
-  --first-hue: 182.55;
-  --sat: 38.21%;
-  --lig: 75.88%;
+  --first-hue: 221;
+  --sat: 16%;
+  --lig: 50%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
