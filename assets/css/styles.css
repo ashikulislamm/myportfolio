@@ -32,7 +32,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Roundo', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -938,10 +938,6 @@ body.light_Theme{
   .services__container{
     grid-template-columns: repeat(3,192px);
     column-gap: 3rem;
-  }
-  .services__card{
-    padding: 5rem 2rem 1.5rem;
-
   }
   .work__container{
     gap: 3rem;
