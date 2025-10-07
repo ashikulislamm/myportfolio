@@ -107,6 +107,38 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*=============== LOAD MORE WORK CARDS ===============*/
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const hiddenCards = document.querySelectorAll('.work__card--hidden');
+let cardsToShow = 4; // Number of cards to show on each load more click
+let currentShown = 0;
+
+loadMoreBtn.addEventListener('click', () => {
+    const cardsToReveal = Array.from(hiddenCards).slice(currentShown, currentShown + cardsToShow);
+    
+    cardsToReveal.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.remove('work__card--hidden');
+            card.style.display = 'block';
+            // Add a small animation delay for each card
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 100);
+        }, index * 100);
+    });
+    
+    currentShown += cardsToShow;
+    
+    // Hide the load more button if all cards are shown
+    if (currentShown >= hiddenCards.length) {
+        loadMoreBtn.classList.add('hidden');
+    }
+});
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr= ScrollReveal({
